@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Devansh Sarshode</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                            Home</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">
+                            Portfolio</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                            About </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services">
+                            Services </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact"> Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main hero banner -->
+ <!-- Update for Hero Section: HTML + Image + Animation -->
+<!-- Updated Hero Section: Info Left, Image Right -->
+<section id="home" class="hero">
+    <div class="intro-container">
+        <!-- Left: Intro Text -->
+        <div class="intro" style="flex: 1; min-width: 300px;">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Devansh Sarshode</h1>
+                <h4 class="sub-heading">
+                    Aspiring Developer | Django • Power BI • Data Analytics Enthusiast
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <a href="files/Devansh_Sarshode_Resume.pdf" download class="btn ghost-btn">Get Resume</a>
+            </div>
+        </div>
+
+        <!-- Right: Animated Image -->
+        <div class="intro-image" style="flex: 1; min-width: 250px; text-align: center; animation: float 3s ease-in-out infinite;">
+            <img src="myimg.jpeg" alt="Devansh Sarshode" style="width: 300px; height: auto; border-radius: 50%; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <!-- Featured Portfolio Section -->
+<section class="portfolio" id="portfolio">
+    <div class="portfolio-heading">
+        <h1 class="my-heading text-center">Featured Portfolio</h1>
+    </div>
+    <div class="portfolio-content">
+        <div class="my-row">
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="diwali.jpg" alt="Diwali Sales Prediction">
+                    </div>
+                    <h3 class="greet-heading blue-text">Diwali Sales Predictor</h3>
+                    <p class="small-para blue-text">Data Analytics · Python · Matplotlib</p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="senti.jpg" alt="Sentiment Chat Analyzer">
+                    </div>
+                    <h3 class="greet-heading blue-text">Sentiment Chat Analyzer</h3>
+                    <p class="small-para blue-text">NLP · Streamlit · WhatsApp Analysis</p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="employe.jpg" alt="Employee System">
+                    </div>
+                    <h3 class="greet-heading blue-text">Employee Management System</h3>
+                    <p class="small-para blue-text">Django · Admin Panel · CRUD Ops</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-row">
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="power.jpg" alt="Power BI Dashboard">
+                    </div>
+                    <h3 class="greet-heading blue-text">Sales Dashboard</h3>
+                    <p class="small-para blue-text">Excel · Power BI · Insights</p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="face.jpg" alt="Face Detection">
+                    </div>
+                    <h3 class="greet-heading blue-text">Face Detection App</h3>
+                    <p class="small-para blue-text">OpenCV · Python · Haar Cascade</p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card port-card">
+                    <div class="image">
+                        <img src="data.jpg" alt="Data Visualization">
+                    </div>
+                    <h3 class="greet-heading blue-text">Custom Data Visualizations</h3>
+                    <p class="small-para blue-text">Power BI · Tableau · Excel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                Hi, I'm <strong>Devansh Sarshode</strong>, a passionate Computer Science undergraduate from Betul, Madhya Pradesh, currently studying at CSVTU. My technical interests lie in web development, data analytics, and full-stack projects that bring real-world impact. I’m proficient in Python, Django, HTML, CSS, and JavaScript, with hands-on experience in tools like Power BI, Streamlit, OpenCV, and SQL. I’m always driven by curiosity and the desire to turn ideas into working solutions.
+            </p>
+            <p>
+                Throughout my academic journey, I’ve worked on a variety of projects—from building a Diwali Sales Predictor using Python libraries like Pandas and Matplotlib, to creating interactive dashboards with Power BI for business insights. I also developed a WhatsApp Chat Analyzer using NLP, and a facial detection system using OpenCV. These projects helped me strengthen my logical thinking and problem-solving skills while improving my command of tools and frameworks.
+            </p>
+            <p>
+                Besides academics, I am also deeply involved in sports and leadership. I’ve proudly represented Madhya Pradesh twice at the national level in basketball and currently serve as the Basketball Head and team captain at my university. Balancing sports and academics has taught me discipline, teamwork, and resilience. These qualities reflect in my work ethic and project delivery.
+            </p>
+            <p>
+                My goal is to continue evolving as a developer by exploring new technologies, contributing to open-source projects, and collaborating with professionals and innovators in the field. I’m also enthusiastic about learning more about cloud computing, automation, and data visualization. With a growth mindset, I believe in lifelong learning and adapting to industry trends.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="passport.jpg" alt="Devansh Sarshode">
+        </div>
+    </section>
+    
+   <!-- Services Section -->
+<section class="services" id="services">
+    <div class="services-heading">
+        <h1 class="my-heading text-center">My Services</h1>
+    </div>
+    <div class="services-content">
+        <div class="my-row">
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">UI/UX Design</h3>
+                    <p class="small-para">
+                        I create clean, responsive, and user-friendly designs that blend aesthetics with functionality. From wireframes to final mockups, I prioritize intuitive experiences tailored for both web and mobile platforms.
+                    </p>
+                    <p class="small-para">
+                        I use tools like Figma and Bootstrap to align visual identity with user goals, ensuring every design is efficient, modern, and impactful.
+                    </p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">Web Development</h3>
+                    <p class="small-para">
+                        From static websites to dynamic full-stack apps, I build scalable solutions using HTML, CSS, JavaScript, and Python (Django). I follow clean coding practices and ensure cross-browser compatibility.
+                    </p>
+                    <p class="small-para">
+                        Whether it's a portfolio, blog, or admin dashboard – I can build it fast and efficiently using modern tech stacks.
+                    </p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">Data Analytics</h3>
+                    <p class="small-para">
+                        I analyze structured data using Python, Pandas, Excel, and Power BI. From trend analysis to customer insights, I convert raw data into actionable dashboards and visuals.
+                    </p>
+                    <p class="small-para">
+                        My experience includes sales forecasting, KPI tracking, and building real-time dashboards for decision-making.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-row">
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">Machine Learning & AI</h3>
+                    <p class="small-para">
+                        I build ML-powered apps using Python and OpenCV — including face detection systems and sentiment analysis tools. My focus is on real-time performance with optimized accuracy.
+                    </p>
+                    <p class="small-para">
+                        Tools used: Scikit-learn, Numpy, Matplotlib, and pre-trained deep learning models.
+                    </p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">Dashboard Development</h3>
+                    <p class="small-para">
+                        I create business and analytics dashboards using Power BI, Excel, and Tableau. These dashboards reveal hidden trends and help make data-driven decisions.
+                    </p>
+                    <p class="small-para">
+                        Whether it’s tracking sales, managing inventory, or user behavior – I can visualize it clearly and interactively.
+                    </p>
+                </div>
+            </div>
+            <div class="my-col">
+                <div class="my-card">
+                    <div class="icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="greet-heading blue-text">Project Deployment</h3>
+                    <p class="small-para">
+                        I help deploy and maintain full-stack projects using GitHub, Heroku, or cloud platforms. From setting up environments to continuous updates – I ensure stability post-launch.
+                    </p>
+                    <p class="small-para">
+                        I also document workflows and provide guidance for scaling and maintaining codebases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Achievements Section -->
+<section class="portfolio" id="achievements">
+    <div class="portfolio-heading">
+        <h1 class="my-heading text-center">Achievements</h1>
+    </div>
+    <div class="my-row">
+        <div class="my-col">
+            <div class="my-card achievement-card">
+                <i class="fas fa-laptop-code icon"></i>
+                <h3 class="greet-heading">Hackbios 2023 Finalist</h3>
+                <p class="small-para">Developed a real-time data analyzer using Python and Power BI.</p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card achievement-card">
+                <i class="fas fa-users icon"></i>
+                <h3 class="greet-heading">Hackathon 2023</h3>
+                <p class="small-para">Built a Django-based project management tool in a national-level event.</p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card achievement-card">
+                <i class="fas fa-medal icon"></i>
+                <h3 class="greet-heading">National Basketball Player</h3>
+                <p class="small-para">Represented MP twice in national-level tournaments.</p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card achievement-card">
+                <i class="fas fa-chalkboard-teacher icon"></i>
+                <h3 class="greet-heading">University Basketball Captain</h3>
+                <p class="small-para">Led the CSVTU basketball team and organized events.</p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card achievement-card">
+                <i class="fas fa-star icon"></i>
+                <h3 class="greet-heading">Event Organizer</h3>
+                <p class="small-para">Managed and hosted inter-college sports tournaments as team head.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Education Section -->
+<section class="portfolio" id="education">
+    <div class="portfolio-heading">
+        <h1 class="my-heading text-center">Education</h1>
+    </div>
+    <div class="my-row">
+        <div class="my-col">
+            <div class="my-card education-card">
+                <i class="fas fa-university icon"></i>
+                <h3 class="greet-heading">M.Tech - Computer Science</h3>
+                <p class="small-para">Amrita Vishwa Vidyapeetham, Coimbatore</p>
+                <p class="small-para">2025 – 2027 (Pursuing)</p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card education-card">
+                <i class="fas fa-graduation-cap icon"></i>
+                <h3 class="greet-heading">B.Tech - CSE (Data Science)</h3>
+                <p class="small-para">CSVTU University</p>
+                <p class="small-para">2019 – 2023 | CGPA: <strong>8.6</strong></p>
+            </div>
+        </div>
+        <div class="my-col">
+            <div class="my-card education-card">
+                <i class="fas fa-school icon"></i>
+                <h3 class="greet-heading">12th – Science Stream</h3>
+                <p class="small-para">RD Public School, Betul, MP</p>
+                <p class="small-para">Year: 2021 | Percentage: <strong>78.6%</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact me section -->
+<section class="contact" id="contact">
+    <div class="contact-heading">
+        <h1 class="my-heading text-center">Contact Me</h1>
+    </div>
+    <div class="contact-content">
+        <div class="contact-form-container">
+            <h1 class="greet-heading">Get In Touch</h1>
+            <form class="contact-form">
+                <input class="form-controls" type="text" placeholder="Your Name" required>
+                <input class="form-controls" type="email" placeholder="Your Email" required>
+                <input class="form-controls" type="text" placeholder="Your Phone" required>
+                <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10" required></textarea>
+                <input class="form-btn btn common-btn" type="submit" value="Send Message">
+            </form>
+        </div>
+        <div class="contact-details">
+            <h1 class="greet-heading">My Contact Details</h1>
+            <div class="details">
+                <h5 class="contact-heading">EMAIL</h5>
+                <p class="contact-text">devanshsarshode@gmail.com</p>
+            </div>
+            <div class="details">
+                <h5 class="contact-heading">PHONE</h5>
+                <p class="contact-text">+91 79994 69971</p>
+            </div>
+            <div class="details">
+                <h5 class="contact-heading">LOCATION</h5>
+                <p class="contact-text">Betul, Madhya Pradesh, India</p>
+                <p class="contact-text">Pin: 460001</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Footer section -->
+<!-- Footer section -->
+<footer class="footer">
+    <div class="footer-content text-center">
+        <h4>
+            Copyright © 2025 All rights reserved |
+            Portfolio website of Devansh Sarshode.
+        </h4>
+        <p>
+            📍 Betul, Madhya Pradesh - 460001 <br>
+            📞 7999469971 | 📧 <a href="mailto:devanshsarshode@gmail.com">devanshsarshode@gmail.com</a>
+        </p>
+        <div class="social-links">
+            <div class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="https://www.linkedin.com/in/devansh-sarshode/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="https://github.com/Dev9424" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="footer-list-items">
+                        <a class="footer-links" href="https://www.instagram.com/dev__neet/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>

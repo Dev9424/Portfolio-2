@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #d77474, #c85353, #a93535);
+    z-index: 1000;
+}
+.logo {
+    padding: 0 5rem;
+}
+.logo-heading {
+    color: #fff;
+}
+
+.menu {
+    padding: 0 5rem;
+}
+.hamburger {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+}
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+.links {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: 0.25s;
+}
+.links:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./Images/heroImg3.avif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 5rem;
+}
+.intro {
+    text-align: center;
+    margin: 0 5rem;
+}
+.intro-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.common-btn {
+    background-color: #a93535;
+    color: #fff;
+    border: 2px solid #a93535;
+}
+.common-btn:hover {
+    background-color: #fff;
+    color: #a93535;
+}
+.ghost-btn {
+    background-color: #fff;
+    color: #a93535;
+    border: 2px solid #a93535;
+}
+.ghost-btn:hover {
+    background-color: #a93535;
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(45deg, #733636, #b32727);
+    padding: 5rem 3rem;
+    color: #fff;
+}
+.about-text {
+    width: 50%;
+}
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50% / 40%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    display: block;
+}
+
+
+/* Common Section Spacing */
+.portfolio,
+.services,
+.achievements {
+    padding: 4rem 5rem;
+}
+.portfolio-heading,
+.services-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Card Layout */
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.my-col {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.my-card {
+    background: linear-gradient(135deg, #d7747c, #c85353, #a93535);
+    padding: 2rem;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+.my-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.icon {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.icon i {
+    color: #a93535;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+.my-card:hover .icon {
+    background-color: #a93535;
+    transform: scale(1.1);
+}
+.my-card:hover .icon i {
+    color: #fff;
+}
+
+/* Portfolio Card Images */
+.port-card .image img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.3s ease;
+}
+.port-card:hover .image img {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 5rem;
+}
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.contact-form-container,
+.contact-details {
+    flex: 1;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.contact-form .form-btn {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(45deg, #733636, #b32727);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+
+}
+.footer-menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.footer-list-items {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #c85353;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-links {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Responsive Gaps for Services, Portfolio, Achievements */
+.portfolio .my-row,
+.services .my-row,
+.achievements .my-row {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio .my-col,
+.services .my-col,
+.achievements .my-col {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+/* Style for button container */
+.intro-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Helps on small screens */
+    margin-top: 20px;
+}
+
+/* Common button style */
+.btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Intro Container for Hero Section */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+}
+
+/* Intro Text Side */
+.intro {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Animated Image */
+.intro-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.intro-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-buttons {
+        justify-content: center;
+    }
+
+    .intro-image {
+        margin-top: 20px;
+    }
+}
+
